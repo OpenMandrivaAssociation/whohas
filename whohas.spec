@@ -41,3 +41,10 @@ install -m 644 -D usr/share/man/de/man1/whohas.1.xz %{buildroot}%{_mandir}/de/ma
 %doc intro.txt LICENSE TODO.txt Changelog
 %{_mandir}/man1/whohas.1.xz
 %lang(de)%{_mandir}/de/man1/whohas.1.xz
+
+
+%changelog
+* Mon Nov 28 2011 Andrey Smirnov <asmirnov@mandriva.org> 0.29-1
++ Revision: 735134
+- imported package whohas
+
