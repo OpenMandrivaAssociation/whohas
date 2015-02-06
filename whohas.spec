@@ -1,6 +1,6 @@
 Name:		whohas
 Version:	0.29
-Release:	1
+Release:	2
 Summary:	Command line tool searching package in different distributions
 Group:		Development/Other
 License:	GPLv2+
