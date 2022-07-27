@@ -8,7 +8,9 @@ URL:		http://www.philippwesche.org/200811/whohas/intro.html
 Source0:  https://github.com/whohas/whohas/releases/download/%{version}/whohas-%{version}.tar.gz
 #Source0:	http://www.philippwesche.org/200811/whohas/%{name}-%{version}.tar.gz
 BuildArch:	noarch
+BuildRequires:  perl-Env
 Requires:	perl-libwww-perl
+Requires: perl-Env
 
 %description
 whohas is a command line tool that allows querying several package lists
