@@ -27,14 +27,16 @@ release of a distribution (implemented only for Debian).
 %setup -q
 
 %build
-
+%make_build
 %install
-install -m 755 -D program/whohas %{buildroot}%{_bindir}/whohas
-mv usr/share/man/de/man1/whohas.1 usr/share/man/de/man1/whohas.1.old
-iconv -f ISO_8859-1 -t UTF-8 usr/share/man/de/man1/whohas.1.old > usr/share/man/de/man1/whohas.1
-xz -zk usr/share/man/man1/whohas.1 usr/share/man/de/man1/whohas.1
-install -m 644 -D usr/share/man/man1/whohas.1.xz %{buildroot}%{_mandir}/man1/whohas.1.xz
-install -m 644 -D usr/share/man/de/man1/whohas.1.xz %{buildroot}%{_mandir}/de/man1/whohas.1.xz
+%make_install
+
+#install -m 755 -D program/whohas %{buildroot}%{_bindir}/whohas
+#mv usr/share/man/de/man1/whohas.1 usr/share/man/de/man1/whohas.1.old
+#iconv -f ISO_8859-1 -t UTF-8 usr/share/man/de/man1/whohas.1.old > usr/share/man/de/man1/whohas.1
+#xz -zk usr/share/man/man1/whohas.1 usr/share/man/de/man1/whohas.1
+#install -m 644 -D usr/share/man/man1/whohas.1.xz %{buildroot}%{_mandir}/man1/whohas.1.xz
+#install -m 644 -D usr/share/man/de/man1/whohas.1.xz %{buildroot}%{_mandir}/de/man1/whohas.1.xz
 
 %files
 %{_bindir}/whohas
