@@ -4,7 +4,7 @@ Release:	1
 Summary:	Command line tool searching package in different distributions
 Group:		Development/Other
 License:	GPLv2+
-URL:		http://www.philippwesche.org/200811/whohas/intro.html
+URL:		https://www.philippwesche.org/200811/whohas/intro.html
 Source0:  https://github.com/whohas/whohas/releases/download/%{version}/whohas-%{version}.tar.gz
 #Source0:	http://www.philippwesche.org/200811/whohas/%{name}-%{version}.tar.gz
 BuildArch:	noarch
